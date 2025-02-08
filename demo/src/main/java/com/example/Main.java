@@ -11,13 +11,13 @@ class Args {
     @Parameter
     private List<String> parameters = new ArrayList<>();
 
-    @Parameter(names = {"--width", "-w"}, description = "Width of the screen")
+    @Parameter(names = { "--width", "-w" }, description = "Width of the screen")
     public int width = 640;
 
-    @Parameter(names = {"--height", "-h"}, description = "Height of the screen")
-    public int height= 480;
+    @Parameter(names = { "--height", "-h" }, description = "Height of the screen")
+    public int height = 480;
 
-  }
+}
 
 public class Main {
 
@@ -28,8 +28,7 @@ public class Main {
         createGame(arguments);
     }
 
-    private static void createGame(Args arguments)
-    {
+    private static void createGame(Args arguments) {
         Window.Options options = new Window.Options();
         options.title = "Game";
         options.width = arguments.width;
